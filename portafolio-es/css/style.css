@@ -1,0 +1,111 @@
+/** Media Queries **/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, Arial, Helvetica;
+  background: url("../img/prism1.png") repeat;
+}
+
+.contenedor {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+/** Media Queries **/
+.barra {
+  background: url("../img/prism1.png") repeat;
+}
+.barra .contenedor-barra {
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.barra .contenedor-barra .foto-nombre {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  grid-gap: 1rem;
+  align-items: center;
+}
+.barra .contenedor-barra .foto-nombre .foto {
+  border-radius: 50%;
+}
+.barra .contenedor-barra .foto-nombre h2 {
+  font-size: 2.5rem;
+  font-family: "Indie Flower";
+  color: #ffffff;
+}
+.barra .contenedor-barra .idiomas {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: flex-end;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+}
+.barra .contenedor-barra .idiomas .idioma {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.barra .contenedor-barra .idiomas .idioma img {
+  width: 25px;
+  margin-left: 10px;
+}
+.barra .contenedor-barra .idiomas .idioma img:hover {
+  opacity: 0.3;
+}
+.barra .contenedor-barra .idiomas .esp {
+  grid-column: 1/3;
+}
+
+.menu {
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-top: 2px solid rgba(86, 86, 86, 0.5);
+  border-bottom: 2px solid rgba(86, 86, 86, 0.5);
+  position: sticky;
+  top: 0;
+}
+.menu .contenedor-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+.menu .contenedor-menu a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.menu .contenedor-menu a:hover {
+  color: #c90c0f;
+}
+
+.header {
+  background: url("../img/bg.jpg") no-repeat;
+  background-size: 100%;
+  background-attachment: scroll;
+  height: 700px;
+}
+
+/*# sourceMappingURL=style.css.map */
