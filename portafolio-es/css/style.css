@@ -14,10 +14,12 @@ body {
   padding: 0;
   font-family: sans-serif, Arial, Helvetica;
   background: url("../img/prism1.png") repeat;
+  background-attachment: fixed;
+  color: #ffffff;
 }
 
 .contenedor {
-  width: 1200px;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -31,81 +33,172 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /** Media Queries **/
+/** Media Queries **/
+@media only screen and (min-width: 768px) {
+  .barra .contenedor-barra {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .barra .contenedor-barra .foto-nombre img {
+    width: 5rem;
+  }
+  .barra .contenedor-barra .foto-nombre .nombre {
+    font-size: 3rem;
+    letter-spacing: 0.05rem;
+  }
+  .barra .contenedor-barra .idiomas {
+    flex-direction: column;
+  }
+  .barra .contenedor-barra .idiomas .idioma span {
+    display: block;
+  }
+  .barra .contenedor-barra .idiomas img {
+    width: 1.875rem;
+    margin-left: 0.625rem;
+  }
+
+  .menu .contenedor-menu a {
+    font-size: 1.1rem;
+  }
+
+  .header .contenedor-header {
+    height: 100%;
+  }
+  .header .contenedor-header h2 {
+    width: 40.375rem;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+  }
+}
 .barra {
   background: url("../img/prism1.png") repeat;
 }
 .barra .contenedor-barra {
   padding: 0.5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .barra .contenedor-barra .foto-nombre {
-  display: grid;
-  grid-template-columns: 2fr 8fr;
-  grid-gap: 1rem;
+  display: flex;
   align-items: center;
+  margin-bottom: 1.25rem;
 }
-.barra .contenedor-barra .foto-nombre .foto {
+.barra .contenedor-barra .foto-nombre img {
+  width: 3.25rem;
   border-radius: 50%;
+  margin-right: 1.25rem;
 }
-.barra .contenedor-barra .foto-nombre h2 {
-  font-size: 2.5rem;
-  font-family: "Indie Flower";
-  color: #ffffff;
+.barra .contenedor-barra .foto-nombre .nombre {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Indie Flower", sans-serif;
 }
 .barra .contenedor-barra .idiomas {
-  width: 100%;
-  display: grid;
-  align-items: center;
-  justify-content: flex-end;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
+  display: flex;
 }
 .barra .contenedor-barra .idiomas .idioma {
   display: flex;
   align-items: center;
-  color: #ffffff;
+  margin: 0.625rem 0;
 }
-.barra .contenedor-barra .idiomas .idioma img {
-  width: 25px;
-  margin-left: 10px;
+.barra .contenedor-barra .idiomas .idioma span {
+  display: none;
 }
-.barra .contenedor-barra .idiomas .idioma img:hover {
-  opacity: 0.3;
+.barra .contenedor-barra .idiomas img.active {
+  opacity: 0.5;
 }
-.barra .contenedor-barra .idiomas .esp {
-  grid-column: 1/3;
+.barra .contenedor-barra .idiomas img {
+  width: 3.125rem;
+  margin-left: 2.5rem;
+}
+.barra .contenedor-barra .idiomas img:hover {
+  opacity: 0.5;
 }
 
 .menu {
   padding: 0.5rem;
   background: rgba(0, 0, 0, 0.5);
-  border-top: 2px solid rgba(86, 86, 86, 0.5);
-  border-bottom: 2px solid rgba(86, 86, 86, 0.5);
+  border-top: 0.125rem solid rgba(86, 86, 86, 0.5);
+  border-bottom: 0.125rem solid rgba(86, 86, 86, 0.5);
   position: sticky;
   top: 0;
 }
 .menu .contenedor-menu {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-columns: repeat(auto-fit, 25%);
 }
 .menu .contenedor-menu a {
-  display: inline-block;
+  text-align: center;
   text-decoration: none;
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 0.6rem;
   text-transform: uppercase;
-  text-align: center;
 }
 .menu .contenedor-menu a:hover {
   color: #c90c0f;
 }
 
 .header {
-  background: url("../img/bg.jpg") no-repeat;
-  background-size: 100%;
-  background-attachment: scroll;
-  height: 700px;
+  height: 30rem;
+  width: 100%;
+}
+.header .contenedor-header {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .contenedor-header h2 {
+  width: 18.75rem;
+  text-align: center;
+  font-family: "Indie Flower", sans-serif;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+}
+.header .contenedor-header blockquote {
+  line-height: 1.5;
+  font-style: italic;
+  color: #9AA1A9;
+}
+
+/** Media Queries **/
+@media only screen and (min-width: 768px) {
+  .barra .contenedor-barra {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .barra .contenedor-barra .foto-nombre img {
+    width: 5rem;
+  }
+  .barra .contenedor-barra .foto-nombre .nombre {
+    font-size: 3rem;
+    letter-spacing: 0.05rem;
+  }
+  .barra .contenedor-barra .idiomas {
+    flex-direction: column;
+  }
+  .barra .contenedor-barra .idiomas .idioma span {
+    display: block;
+  }
+  .barra .contenedor-barra .idiomas img {
+    width: 1.875rem;
+    margin-left: 0.625rem;
+  }
+
+  .menu .contenedor-menu a {
+    font-size: 1.1rem;
+  }
+
+  .header .contenedor-header {
+    height: 100%;
+  }
+  .header .contenedor-header h2 {
+    width: 40.375rem;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
