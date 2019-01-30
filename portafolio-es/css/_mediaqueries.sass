@@ -1,0 +1,33 @@
+@import 'variables'
+@import 'mixins'
+    
+@include tablet()
+    .barra 
+        .contenedor-barra
+            flex-direction: row
+            justify-content: space-between
+            .foto-nombre
+                img
+                    width: 5rem
+                .nombre
+                    font-size: 3rem
+                    letter-spacing: .05rem
+            .idiomas
+                flex-direction: column
+                .idioma
+                    span
+                        display: block
+                img
+                    width: 1.875rem
+                    margin-left: 0.625rem
+    .menu
+        .contenedor-menu
+            a
+                font-size: 1.1rem
+    .header
+        .contenedor-header
+            height: 100%
+            h2
+                width: 40.375rem
+                font-size: 4rem
+                letter-spacing: .5rem       
