@@ -1,17 +1,16 @@
 /** Media Queries **/
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
-*:after,
-*:before {
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: sans-serif, Arial, Helvetica;
   background: url("../img/prism1.png") repeat;
   background-attachment: fixed;
@@ -24,7 +23,7 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -61,6 +60,9 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 1.1rem;
   }
 
+  .header {
+    height: 100vh;
+  }
   .header .contenedor-header {
     height: 100%;
   }
@@ -119,9 +121,10 @@ h1, h2, h3, h4, h5, h6, p {
 .menu {
   padding: 0.5rem;
   background: rgba(0, 0, 0, 0.5);
-  border-top: 0.125rem solid rgba(86, 86, 86, 0.5);
-  border-bottom: 0.125rem solid rgba(86, 86, 86, 0.5);
+  border-top: 0.1rem solid rgba(86, 86, 86, 0.5);
+  border-bottom: 0.1rem solid rgba(86, 86, 86, 0.5);
   position: sticky;
+  z-index: 11;
   top: 0;
 }
 .menu .contenedor-menu {
@@ -132,7 +135,8 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center;
   text-decoration: none;
   color: #ffffff;
-  font-size: 0.6rem;
+  font-size: 0.45rem;
+  line-height: 1rem;
   text-transform: uppercase;
 }
 .menu .contenedor-menu a:hover {
@@ -144,7 +148,7 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100%;
 }
 .header .contenedor-header {
-  height: 60%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -161,6 +165,128 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 1.5;
   font-style: italic;
   color: #9AA1A9;
+}
+
+/** Media Queries **/
+.main .sobre-mi {
+  min-height: 100vh;
+  padding: 3rem 0;
+  background: #ffffff;
+  color: #000;
+  margin-bottom: 3rem;
+}
+.main .sobre-mi .contenedor-sobre-mi {
+  margin-bottom: 4rem;
+}
+.main .sobre-mi .contenedor-sobre-mi h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.main .sobre-mi .contenedor-sobre-mi .texto {
+  padding: 1.5rem 0;
+  background: #101010;
+  color: red;
+  font-family: monospace, Arial;
+  width: 70%;
+  min-height: 27.5rem;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.main .sobre-mi .contenedor-sobre-mi .texto #pow-txt {
+  display: none;
+  color: #e3e3e3;
+  font-weight: 100;
+}
+.main .sobre-mi .contenedor-sobre-mi .texto .direccion {
+  margin-bottom: 1rem;
+}
+.main .sobre-mi .contenedor-sobre-mi .texto #pow-txt {
+  margin-bottom: 1rem;
+}
+.main .sobre-mi .contenedor-sobre-mi .texto .descripcion {
+  color: grey;
+  font-weight: 100;
+  line-height: 1.5;
+}
+.main .sobre-mi .contenedor-sobre-mi .texto p {
+  width: 90%;
+  margin: 0 auto;
+}
+.main .sobre-mi .contenedor-conocimientos .titulo {
+  text-align: center;
+  margin: 4rem 0 3rem 0;
+}
+.main .sobre-mi .contenedor-conocimientos .conocimientos {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-row-gap: 2rem;
+}
+.main .sobre-mi .contenedor-conocimientos .conocimientos .tarjeta {
+  margin: 0 auto;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #262626;
+  overflow: hidden;
+}
+.main .sobre-mi .contenedor-conocimientos .conocimientos .tarjeta input,
+.main .sobre-mi .contenedor-conocimientos .conocimientos .tarjeta .cambio {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+  outline: none;
+  z-index: 10;
+}
+.main .sobre-mi .contenedor-conocimientos .conocimientos .tarjeta input {
+  opacity: 0;
+}
+.main .sobre-mi .contenedor-conocimientos .conocimientos .tarjeta .cambio {
+  pointer-events: none;
+  border-radius: 50%;
+  background: #fff;
+  transition: 0.5s;
+  text-align: center;
+  line-height: 50px;
+  font-size: 36px;
+  box-shadow: 0 0 0 0px #9c27b0;
+}
+.main .sobre-mi .contenedor-conocimientos .conocimientos .tarjeta input:checked ~ .cambio {
+  box-shadow: 0 0 0 500px #9c27b0;
+  transform: rotate(225deg);
+}
+.main .sobre-mi .contenedor-conocimientos .conocimientos .tarjeta .img,
+.main .sobre-mi .contenedor-conocimientos .conocimientos .tarjeta .detalles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main .sobre-mi .contenedor-conocimientos .conocimientos .tarjeta .detalles {
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 11;
+  pointer-events: none;
+  transition: 0.5s;
+  opacity: 0;
+}
+.main .sobre-mi .contenedor-conocimientos .conocimientos .tarjeta input:checked ~ .detalles {
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+.main .sobre-mi .contenedor-conocimientos .conocimientos .tarjeta .detalles h3 {
+  margin-bottom: 5px;
+  color: #fff;
+  text-align: center;
+}
+.main .sobre-mi .contenedor-conocimientos .conocimientos .tarjeta .detalles p {
+  font-size: 0.9rem;
+  color: #fff;
+  line-height: 1.65;
 }
 
 /** Media Queries **/
@@ -191,6 +317,9 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 1.1rem;
   }
 
+  .header {
+    height: 100vh;
+  }
   .header .contenedor-header {
     height: 100%;
   }

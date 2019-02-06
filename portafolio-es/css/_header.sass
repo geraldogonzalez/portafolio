@@ -40,9 +40,10 @@
 .menu
     padding: .5rem
     background: rgba(#000, .5)
-    border-top: 0.125rem solid rgba(#565656, .5)
-    border-bottom: 0.125rem solid rgba(#565656, .5)
+    border-top: 0.1rem solid rgba(#565656, .5)
+    border-bottom: 0.1rem solid rgba(#565656, .5)
     position: sticky
+    z-index: 11
     top: 0
     .contenedor-menu
         display: grid
@@ -51,7 +52,8 @@
             text-align: center
             text-decoration: none
             color: $blanco
-            font-size: .6rem
+            font-size: .45rem
+            line-height: 1rem
             text-transform: uppercase
             &:hover
                 color: $rojo
@@ -60,7 +62,7 @@
     height: 30rem
     width: 100%
     .contenedor-header
-        height: 60%
+        height: 100%
         display: flex
         flex-direction: column
         justify-content: center

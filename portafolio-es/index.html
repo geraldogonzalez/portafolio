@@ -5,55 +5,239 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js">
 <!--<![endif]-->
+
 <head lang="es">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portafolio | Geraldo González</title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portafolio online de un desarrollador web. Desarrollador front-end Geraldo González, creador de sitios webs atractivos, dinamicos e intuitivos.">
+    <meta name="keywords" content="desarrollador web, diseñador, desarrollador front-end">
+    <meta name="author" content="Geraldo González">
+
+    <title>Geraldo González | Desarrollador Web</title>
+
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="barra">
-            <div class="contenedor contenedor-barra">
-                <div class="foto-nombre">
-                    <img src="img/foto.jpg" alt="Mi foto" class="foto">
-                    <span class="nombre">Geraldo González</span>
+    <div class="barra" id="barra">
+        <div class="contenedor contenedor-barra">
+            <div class="foto-nombre">
+                <img src="img/foto.jpg" alt="Mi foto" class="foto">
+                <span class="nombre">Geraldo González</span>
+            </div>
+            <div class="idiomas">
+                <div class="esp idioma">
+                    <span>Esp:</span><img src="img/español.png" class="bandera active" alt="Español" title="Español">
                 </div>
-                <div class="idiomas">
-                    <div class="esp idioma">
-                        <span>Esp:</span><img src="img/español.png" class="bandera active"alt="Español" title="Español">
-                    </div>
-                    <div class="eng idioma">
-                        <span>Eng:</span><a href="#"><img src="img/english.png" class="bandera"alt="English" title="Inglés"></a> 
-                    </div>                 
+                <div class="eng idioma">
+                    <span>Eng:</span><a href="#"><img src="img/english.png" class="bandera" alt="English" title="Inglés"></a>
                 </div>
             </div>
         </div>
-        <nav class="menu">
-            <div class="contenedor contenedor-menu">
-                <a href="#">Inicio</a>
-                <a href="#">Sobre mí</a>
-                <a href="#">Proyectos</a>
-                <a href="#">Contacto</a>
-            </div>
-        </nav>
-        <header class="header">
-            <div class="contenedor contenedor-header">
-                <h2 class="profesion">Desarrollador Web Front-end</h2>          
-                <!-- <blockquote class="cita">
+    </div>
+    <nav class="menu">
+        <div class="contenedor contenedor-menu">
+            <a href="#barra">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#">Proyectos</a>
+            <a href="#">Contacto</a>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="contenedor contenedor-header">
+            <h2 class="profesion">Desarrollador Web Front-end</h2>
+            <!-- <blockquote class="cita">
                     “La educación es el arma más poderosa que puedes usar para cambiar el mundo.” <br>
                     <span>- Nelson Mandela</span>
                 </blockquote> -->
-            </div>  
-        </header>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="sobre-mi">
+            <div class="contenedor contenedor-sobre-mi">
+                <h2 class="titulo" id="sobre-mi">Sobre mí</h2>
+                <div class="texto">
+                    <p class="direccion"><span class="dir">C: portafolio/geraldo-gonzalez</span></p>
+                    <p class="descripcion">
+                        $
+                        <span id="tagline">
+                            Bienvenido: <br><br>
+
+                            Soy desarrollador front-end, me gusta mucho el... <ins>1.5</ins> Un momento, ¿sabes qué es
+                            eso, no?
+                            'Desarrollador front-end'. A ver, te explico: <br><br>
+
+                            Un desarollador front-end es el encargado de todo lo que puedes ver en un sitio web.
+                            Desde el diseño, los estilos e incluso animaciones del mismo. Básicamente hace que este
+                            luzca bien y
+                            sea agradable a la vista de los usuarios (o en teoría debería ser así).<br><br>
+
+                            ¿Suena bien, no?
+                            <br><br>
+
+                            Me gusta el fútbol (de hecho, te cuento un secreto: los colores de mi portafolio son los
+                            colores
+                            de mi equipo favorito, el A.C. Milan). Aparte de eso, también me gusta la actuación; y soy
+                            un apasionado de la música.
+                            <del></del></span><del id="pow-trigger"></del>
+                    </p>
+                </div>
+            </div>
+
+            <div class="contenedor contenedor-conocimientos">
+                <h2 class="titulo">Habilidades tecnológicas</h2>
+                <div class="conocimientos">
+                    <div class="tarjeta">
+                        <input type="checkbox" name="">
+                        <div class="cambio red">+</div>
+                        <div class="img">
+                            <img src="img/habilidades/html.jpg" alt="">
+                        </div>
+                        <div class="detalles">
+                            <h3>HTML 5</h3>
+                            <p>
+                                Sus siglas vienen del inglés 'HyperText Markup Language'. Traducido al español
+                                quiere decir 'Lenguaje de Marcado e HiperTexto'. Este lenguaje de marcado nos permite
+                                crear la estructura
+                                (o cuerpo) básica de un sitio web mediante tags (etiquetas). El número cinco (5) hace
+                                referencia a la versión
+                                en la que se encuentra actualmente. Todos los titulos, párrafos, formularios, videos,
+                                entre muchísimas cosas más,
+                                las tenemos gracias a este maravilloso lenguaje.
+                            </p>
+                        </div><!--. detalles -->
+                    </div><!--. tarjeta -->
+
+                    <div class="tarjeta">
+                        <input type="checkbox" name="">
+                        <div class="cambio black">+</div>
+                        <div class="img">
+                            <img src="img/habilidades/css.jpg" alt="">
+                        </div>
+                        <div class="detalles">
+                            <h3>CSS</h3>
+                            <p>
+                                CSS es un lenguaje de estilo. Sus siglas también tienen un significado 'Cascading
+                                StyleSheet',
+                                su traducción es 'Hojas de estilo de cascada'. Seguro ya sabrás qué quiere decir el
+                                número tres (3),
+                                ¿verdad? ¡Exacto! Su versión actual.
+
+                                Este lenguaje de estilos nos permite... pues, darle estilos al cuerpo de nuestro sitio
+                                web.
+                                Es el maquillaje de HTML. Todo el diseño de un sitio va directamente relacionado con
+                                este lenguaje.
+                            </p>
+                        </div><!--. detalles -->
+                    </div><!--. tarjeta -->
+
+                    <div class="tarjeta">
+                        <input type="checkbox" name="">
+                        <div class="cambio red">+</div>
+                        <div class="img">
+                            <img src="img/habilidades/javascript.jpg" alt="">
+                        </div>
+                        <div class="detalles">
+                            <h3>JavaScript</h3>
+                            <p>
+                                ¡Bendito JavaScript! Es un lenguaje de programación que nos permite añadir, eliminar,
+                                aplicar animaciones o
+                                efectos a los componentes de nuestro sitio. Es la herramienta perfecta para realizar
+                                sitios web dinámicos
+                                y muy atractivos de la mano de CSS y HTML. Con el paso del tiempo ha evolucionado de
+                                manera exponencial y
+                                ahora mismo es absolutamente necesario conocerlo si quieres ser desarrollador web.
+                            </p>
+                        </div><!--. detalles -->
+                    </div><!--. tarjeta -->
+
+                    <div class="tarjeta">
+                        <input type="checkbox" name="">
+                        <div class="cambio black">+</div>
+                        <div class="img">
+                            <img src="img/habilidades/bootstrap.jpg" alt="">
+                        </div>
+                        <div class="detalles">
+                            <h3>Bootstrap</h3>
+                            <p>
+                                Es una de las estructuras de trabajo más usados en el mundo. Este framework
+                                hace mucho más sencillo el diseño y posicionamiento de los elementos con CSS.
+                                Te ahorras mucho tiempo gracias a que por defecto él trae las herramientas o código
+                                interno para que tú no tengas que escribir nada más que clases específicas que tiene
+                                predefinidas.
+                                Con una de estas clases de bootstrap te podrías ahorrar 5 o más lineas de código en
+                                CSS.
+                            </p>
+                        </div><!--. detalles -->
+                    </div><!--. tarjeta -->
+
+                    <div class="tarjeta">
+                        <input type="checkbox" name="">
+                        <div class="cambio red">+</div>
+                        <div class="img">
+                            <img src="img/habilidades/sass.png" alt="">
+                        </div>
+                        <div class="detalles">
+                            <h3>Sass</h3>
+                            <p>
+                                Al igual que CSS, es un lenguaje de estilos que con el tiempo se ha ido extendiendo.
+                                Sin embargo
+                                no es la "competencia de CSS" sino todo lo contrario. El lenguaje de estilos Sass debe
+                                traducirse luego a CSS.
+                                Puedes preguntar: "¿De qué me sirve entonces?". Sass nos permite escribir código CSS
+                                mucho más fácil, rápida y
+                                además facilita herramientas que CSS por si solo no puede darte a pesar de usar los
+                                mismos
+                                atributos. Es muy, MUY, M-U-Y usado.
+                            </p>
+                        </div><!--. detalles -->
+                    </div><!--. tarjeta -->
+
+                    <div class="tarjeta">
+                        <input type="checkbox" name="">
+                        <div class="cambio black">+</div>
+                        <div class="img">
+                            <img src="img/habilidades/wordpress.png" alt="">
+                        </div>
+                        <div class="detalles">
+                            <h3>WordPress</h3>
+                            <p>
+                                Es un sistema de gestión de contenido. En palabras menos técnicas: es una herramienta
+                                que facilita la administración de muchos aspectos de tu sitio web sin
+                                necesidad tener conocimientos sobre programación. <br> Sí, como lo lees, cualquier
+                                persona puede usar
+                                o modificar el software de WordPress, además puede hacerlo de forma gratuita. Más del
+                                32% de
+                                todos los sitios web en internet están hechos con WordPress.
+                            </p>
+                        </div><!--. detalles -->
+                    </div><!--. tarjeta -->
+                </div><!--. conocimientos -->
+            </div><!--. contenedor-conocimientos -->
+        </section>
+
+        <section class="proyectos">
+            <div class="contenedor contenedor-proyectos">
+                <div class="proyecto">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
     <script src="" async defer></script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/t.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
 </body>
 

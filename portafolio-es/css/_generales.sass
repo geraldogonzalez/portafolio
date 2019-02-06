@@ -2,15 +2,14 @@
 
 html 
     box-sizing: border-box
+    scroll-behavior: smooth
 
 *,
-*:after,
-*:before
+*::after,
+*::before
     box-sizing: inherit
 
 body 
-    margin: 0
-    padding: 0
     font-family: $fuente_principal
     background: url('../img/prism1.png') repeat
     background-attachment: fixed
@@ -21,7 +20,7 @@ body
     margin: 0 auto
 
 img 
-    width: 100%
+    max-width: 100%
 
 h1, h2, h3, h4, h5, h6, p 
     margin: 0
