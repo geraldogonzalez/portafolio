@@ -10,35 +10,51 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portafolio online de un desarrollador web. Desarrollador front-end Geraldo González, creador de sitios webs atractivos, dinamicos e intuitivos.">
+    <meta name="description"
+        content="Portafolio online de un desarrollador web. Desarrollador front-end Geraldo González, creador de sitios webs atractivos, dinamicos e intuitivos.">
     <meta name="keywords" content="desarrollador web, diseñador, desarrollador front-end">
     <meta name="author" content="Geraldo González">
 
     <title>Geraldo González | Desarrollador Web</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
 </head>
 
 <body>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+   <!--  <div class="carga">
+        <div class="barra barra1"></div>
+        <div class="barra barra2"></div>
+        <div class="barra barra3"></div>
+        <div class="barra barra4"></div>
+        <div class="barra barra5"></div>
+        <div class="barra barra6"></div>
+        <div class="barra barra7"></div>
+        <div class="barra barra8"></div>
+    </div>
+ -->
     <div class="barra" id="barra">
         <div class="contenedor contenedor-barra">
             <div class="foto-nombre">
                 <img src="img/foto.jpg" alt="Mi foto" class="foto">
                 <span class="nombre">Geraldo González</span>
             </div>
-            <div class="idiomas">
+            <!-- <div class="idiomas">
                 <div class="esp idioma">
                     <span>Esp:</span><img src="img/español.png" class="bandera active" alt="Español" title="Español">
                 </div>
                 <div class="eng idioma">
-                    <span>Eng:</span><a href="#"><img src="img/english.png" class="bandera" alt="English" title="Inglés"></a>
+                    <span>Eng:</span><a href="#"><img src="img/english.png" class="bandera" alt="English"
+                            title="Inglés"></a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <nav class="menu">
@@ -89,11 +105,66 @@
                             <del></del></span><del id="pow-trigger"></del>
                     </p>
                 </div>
+               <!--  <div class="boton">
+                   <a class="boton" id="boton">Iniciar consola</a> 
+                </div> -->
             </div>
+        </section>
 
-            <div class="contenedor contenedor-conocimientos">
-                <h2 class="titulo">Habilidades tecnológicas</h2>
-                <div class="conocimientos">
+        <section class="proyectos">
+            <h2 class="titulo">Algunos proyectos realizados</h2>
+            <div class="contenedor contenedor-proyectos">
+                <div class="proyecto">
+                    <div class="foto">
+                        <a href="https://ange09.github.io/practicas/airbnb-clon/index.html" target="_blank"><img src="img/proyectos/airnbnb.jpg" alt=""></a>
+                    </div>
+                    <div class="info">
+                        <h4>ViajaYa</h4>
+                        <h5>Tecnologías utilizadas:</h5>
+                        <p><span class="html">HTML5</span> - <span class="css">CSS3</span> - <span class="javascript">JavaScript</span></p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <div class="foto">
+                        <a href="https://ange09.github.io/practicas/cafe/index.html" target="_blank"><img src="img/proyectos/cafe.jpg" alt=""></a>
+                    </div>
+                    <div class="info">
+                        <h4>Cafe Milanello</h4>
+                        <h5>Tecnologías utilizadas:</h5>
+                        <p><span class="html">HTML5</span> - <span class="css">CSS3</span> - <span class="javascript">JavaScript</span></p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <div class="foto">
+                        <a href="https://ange09.github.io/practicas/blog/index.html" target="_blank"><img src="img/proyectos/blog.jpg" alt=""></a>
+                    </div>
+                    <div class="info">
+                        <h4>Blog</h4>
+                        <h5>Tecnologías utilizadas:</h5>
+                        <p><span class="html">HTML5</span> - <span class="css">CSS3</span> - <span class="javascript">JavaScript</span> - <span class="sass">Sass</span></p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <div class="foto">
+                        <a href="https://ange09.github.io/practicas/galeria/index.html" target="_blank"><img src="img/proyectos/galería.jpg" alt=""></a>
+                    </div>
+                    <div class="info">
+                        <h4>Virtual Shop</h4>
+                        <div class="tech">
+                            <h5>Tecnologías utilizadas:</h5>
+                            <p><span class="html">HTML5</span> - <span class="css">CSS3</span> - <span class="javascript">JavaScript</span> - <span class="javascript">Bootstrap</span></p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <div class="conocimientos">
+            <h2 class="titulo">Habilidades tecnológicas</h2>
+            <div class="contenedor">                
+                <div class="contenedor-conocimientos">
                     <div class="tarjeta">
                         <input type="checkbox" name="">
                         <div class="cambio red">+</div>
@@ -112,8 +183,10 @@
                                 entre muchísimas cosas más,
                                 las tenemos gracias a este maravilloso lenguaje.
                             </p>
-                        </div><!--. detalles -->
-                    </div><!--. tarjeta -->
+                        </div>
+                        <!--. detalles -->
+                    </div>
+                    <!--. tarjeta -->
 
                     <div class="tarjeta">
                         <input type="checkbox" name="">
@@ -135,14 +208,16 @@
                                 Es el maquillaje de HTML. Todo el diseño de un sitio va directamente relacionado con
                                 este lenguaje.
                             </p>
-                        </div><!--. detalles -->
-                    </div><!--. tarjeta -->
+                        </div>
+                        <!--. detalles -->
+                    </div>
+                    <!--. tarjeta -->
 
                     <div class="tarjeta">
                         <input type="checkbox" name="">
                         <div class="cambio red">+</div>
                         <div class="img">
-                            <img src="img/habilidades/javascript.jpg" alt="">
+                            <img src="img/habilidades/js.jpg" alt="">
                         </div>
                         <div class="detalles">
                             <h3>JavaScript</h3>
@@ -155,8 +230,10 @@
                                 manera exponencial y
                                 ahora mismo es absolutamente necesario conocerlo si quieres ser desarrollador web.
                             </p>
-                        </div><!--. detalles -->
-                    </div><!--. tarjeta -->
+                        </div>
+                        <!--. detalles -->
+                    </div>
+                    <!--. tarjeta -->
 
                     <div class="tarjeta">
                         <input type="checkbox" name="">
@@ -175,8 +252,10 @@
                                 Con una de estas clases de bootstrap te podrías ahorrar 5 o más lineas de código en
                                 CSS.
                             </p>
-                        </div><!--. detalles -->
-                    </div><!--. tarjeta -->
+                        </div>
+                        <!--. detalles -->
+                    </div>
+                    <!--. tarjeta -->
 
                     <div class="tarjeta">
                         <input type="checkbox" name="">
@@ -197,8 +276,10 @@
                                 mismos
                                 atributos. Es muy, MUY, M-U-Y usado.
                             </p>
-                        </div><!--. detalles -->
-                    </div><!--. tarjeta -->
+                        </div>
+                        <!--. detalles -->
+                    </div>
+                    <!--. tarjeta -->
 
                     <div class="tarjeta">
                         <input type="checkbox" name="">
@@ -217,24 +298,49 @@
                                 32% de
                                 todos los sitios web en internet están hechos con WordPress.
                             </p>
-                        </div><!--. detalles -->
-                    </div><!--. tarjeta -->
-                </div><!--. conocimientos -->
-            </div><!--. contenedor-conocimientos -->
-        </section>
-
-        <section class="proyectos">
-            <div class="contenedor contenedor-proyectos">
-                <div class="proyecto">
+                        </div>
+                        <!--. detalles -->
+                    </div>
+                    <!--. tarjeta -->
                 </div>
+                <!--. conocimientos -->
             </div>
-        </section>
+            <!--. contenedor -->
+        </div>
+        <!--. contenedor-conocimientos -->
 
+        <section class="certificados">
+            <h2 class="titulo">Certificados obtenidos</h2>
+            <div class="contenedor contenedor-certificados">
+                <a href="img/certificados/html.jpg" data-lightbox="certificado" data-title="Certificado HTML - SoloLearn"><img src="img/certificados/html.jpg" alt=""></a>
+        
+                <a href="img/certificados/css.jpg" data-lightbox="certificado" data-title="Certificado CSS - SoloLearn"><img src="img/certificados/css.jpg" alt=""></a>
+        
+                <a href="img/certificados/javscript.jpg" data-lightbox="certificado" data-title="Certificado JavaScript - SoloLearn"><img src="img/certificados/javscript.jpg" alt=""></a>
+        
+                <a href="img/certificados/programacion.png" data-lightbox="certificado" data-title="Certificado programación básica - Platzi"><img src="img/certificados/programacion.png" alt=""></a>
+        
+                <a href="img/certificados/desarrollo1.jpg" data-lightbox="certificado" data-title="Certificado desarrollo web 1 - Google e IEI"><img src="img/certificados/desarrollo1.jpg" alt=""></a>
+        
+                <a href="img/certificados/desarrollo2.jpg" data-lightbox="certificado" data-title="Certificado desarrollo web 2 - Google e IEI"><img src="img/certificados/desarrollo2.jpg" alt=""></a>
+        </section>
     </main>
 
-
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="redes-sociales">
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="github"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <p class="autor">Geraldo González - Copyright &copy; 2019</p>
+    </footer>
 
     <script src="" async defer></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/t.min.js"></script>

@@ -1,0 +1,44 @@
+@import 'variables'
+@import 'mixins'
+
+.footer
+    background: $blanco
+    color: $negro
+    padding: 2rem 0 0 0
+    .contenedor
+        .redes-sociales
+            display: flex
+            justify-content: center
+            margin-bottom: 1rem
+            a
+                font-size: 2rem
+                padding: .5rem 1rem
+                margin: 0 1rem
+                border-radius: 0.625rem
+                color: $negro
+                transition: all .5s ease
+            .linkedin
+                &:hover
+                    color: $blanco
+                    background: #0e76a8
+            .instagram
+                &:hover
+                    color: $blanco
+                    background: #bc2a8d
+            .twitter
+                &:hover
+                    color: $blanco
+                    background: #00acee
+            .youtube
+                &:hover
+                    color: $blanco
+                    background: #c4302b
+            .github
+                &:hover
+                    color: $blanco
+                    background: #333333
+    p
+        background: #d1d1d1
+        padding: .5rem 0
+        text-align: center
+        font-weight: 700

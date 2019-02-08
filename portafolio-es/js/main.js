@@ -17,7 +17,9 @@ $('document').ready(function(){
     profesion.start();
     // Establezco la duración que tendrá la animación antes de revelar el texto.
     profesion.reveal(3000);
-    
+
+    var boton = document.getElementById('boton');
+        
     $('#tagline').t({
         beep:false,
         caret:'<span style="color:hotpink;">•</span>',
