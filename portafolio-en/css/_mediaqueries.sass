@@ -1,0 +1,36 @@
+@import 'variables'
+@import 'mixins'
+   
+@include tablet()
+    .menu
+        grid-template-columns: 10% auto 10%
+        .contenedor-menu
+            a
+                font-size: 1.1rem
+        .idiomas
+            display: grid
+            flex-direction: column
+    .header
+        height: 100vh
+        .contenedor-header
+            height: 100%
+            .nombre
+                font-size: 4rem
+                letter-spacing: .4rem
+            h2
+                min-width: 35.375rem
+                max-width: 35.375rem
+                font-size: 2.5rem
+                letter-spacing: .5rem
+@include tablet()
+.main
+    .proyectos
+        .contenedor-proyectos
+            .proyecto
+                .foto
+                    a
+                        img
+                            filter: grayscale(0)
+                            transition: all .5s ease-in-out
+                            &:hover
+                                filter: grayscale(100)

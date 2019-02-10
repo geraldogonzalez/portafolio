@@ -1,0 +1,77 @@
+@import 'variables'
+@import 'mixins'
+
+.footer
+    background: $blanco
+    color: $negro
+    padding: 2rem 0 0 0
+    .contenedor
+        .redes-sociales
+            display: flex
+            justify-content: center
+            margin-bottom: 1rem
+            text-align: center
+            .social
+                width: 4.375rem
+                height: 4.375rem
+                background: #f1f1f1
+                margin: 0 0.625rem
+                border-radius: 30%
+                box-shadow: 0 0.3125rem 0.9375rem -0.3125rem #00000070
+                overflow: hidden
+                position: relative
+                i
+                    line-height: 4.375rem
+                    font-size: 1.4375rem
+                    transition: .2s linear
+            .linkedin
+                color: #0e76a8
+            .instagram
+                color: #bc2a8d
+            .twitter
+                color: #00acee
+            .youtube
+                color: #c4302b
+            .github
+                color: #333333
+            .social:hover 
+                i
+                    transform: scale(1.3)
+                    color: #ffffff
+            .social::before
+                content: ""
+                position: absolute
+                width: 120%
+                height: 120%
+                transform: rotate(45deg)
+                left: -110%
+                top: 90%
+            .linkedin::before
+                background: #0e76a8
+            .instagram::before
+                background: #bc2a8d
+            .twitter::before
+                background: #00acee
+            .youtube::before
+                background: #c4302b
+            .github::before
+                background: #333333
+            .social:hover::before
+                animation: aaa .7s 1
+                top: -10%
+                left: -10%
+                @keyframes aaa
+                    0%
+                        left: -110%
+                        top: 90%
+                    50%
+                        left: 10%
+                        top: -30%
+                    100%
+                        top: -10%
+                        left: -10%
+    p
+        background: #d1d1d1
+        padding: .5rem 0
+        text-align: center
+        font-weight: 700
