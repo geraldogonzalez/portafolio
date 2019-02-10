@@ -1,5 +1,10 @@
+window.onload = function(){
+    var barraCarga = document.getElementById('barra-carga');
+    
+    barraCarga.style.visibility = 'hidden';
+    barraCarga.style.opacity = '0';
+}
 $('document').ready(function(){
-
     //ANIMACIÓN DE "REVELACIÓN" DE TEXTO.
 
     /* Guardo en la variable "profesion" la etiqueta que contiene el texto 

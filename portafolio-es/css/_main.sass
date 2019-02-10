@@ -34,19 +34,18 @@
                     width: 90%
                     margin: 0 auto
     .proyectos
-        min-height: 100vh
         padding: 3rem 0
         margin-bottom: 3rem
         .contenedor-proyectos
             display: grid
             justify-content: center
-            grid-template-columns: repeat(auto-fit, minmax(21.875rem, 1fr))
-            grid-column-gap: 6rem
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+            grid-column-gap: 2rem
             grid-row-gap: 2rem
             .proyecto
                 margin: auto
-                width: 21.875rem
-                height: 28.125rem
+                width: 250px
+                height: 350px
                 .info
                     padding: 1rem .5rem
                     height: 10.625rem
@@ -110,6 +109,14 @@
                         z-index: 10
                     input
                         opacity: 0
+                        &:hover
+                            cursor: pointer
+                        &:checked ~ .black
+                            box-shadow: 0 0 0 31.25rem #0d0d0d
+                            transform: rotate(-225deg)
+                        &:checked ~ .red
+                            box-shadow: 0 0 0 31.25rem #770000
+                            transform: rotate(225deg)
                     .cambio
                         pointer-events: none
                         border-radius: 50%
@@ -120,13 +127,8 @@
                         line-height: 3.125rem
                         font-size: 1.9375rem
                         box-shadow: 0 0 0 0px #393939
-                    input:checked ~ .black
-                        box-shadow: 0 0 0 31.25rem #0d0d0d
-                        transform: rotate(225deg)
                     .red
                         box-shadow: 0 0 0 0px #cc4545
-                    input:checked ~ .red
-                        box-shadow: 0 0 0 31.25rem #770000
                     .img, 
                     .detalles
                         position: absolute

@@ -9,6 +9,16 @@ html
 *::before
     box-sizing: inherit
 
+::-webkit-scrollbar
+      width: 10px
+
+::-webkit-scrollbar-track
+      background-color: white
+    
+::-webkit-scrollbar-thumb
+      background-color: #E80000
+      border-radius: 5px
+
 body 
     font-family: $fuente_principal
     background: url('../img/prism1.png') repeat
@@ -31,64 +41,53 @@ h1, h2, h3, h4, h5, h6, p
     margin-bottom: 4rem
     text-align: center
     font-size: 2rem
-    font-weight: 500
+    font-weight: 500 
 
-div.boton
-    display: flex
-    justify-content: center
-    a.boton
-        background: $negro
-        color: $blanco
-        margin-top: 2rem
-        padding: .8rem 1.5rem
-        border-radius: 1.25rem
-        display: inline-block
-        cursor: pointer
-        border: 1px solid $negro
-        transition: all .5s ease
-        &:hover
-            color: $negro
-            background: $blanco
-            transform: scale(1.05)
-
-.carga
+.barra-carga
+    position: absolute
     width: 100vw
     height: 100vh
-    background: $negro
-    display: flex
-    justify-content: center
-    align-items: center
-    .barra1
-        animation-delay: 0.1s
-    .barra2
-        animation-delay: 0.2s
-    .barra3
-        animation-delay: 0.3s
-    .barra4
-        animation-delay: 0.4s       
-    .barra5
-        animation-delay: 0.5s
-    .barra6
-        animation-delay: 0.6s
-    .barra7
-        animation-delay: 0.7s
-    .barra8
-        animation-delay: 0.8s           
-    .barra
-        width: 6px
-        height: 60px
-        margin: .15rem
-        background: $blanco
-        display: inline-block
-        transform-origin: bottom center
-        animation: carga 1.5s ease-in-out infinite 
-        @keyframes carga
-            0%
-                transform: scaleY(0.1)
-                background: $blanco
-            50%
-                transform: scaleY(1)
-                background: #ff0000
-            100%
-                transform: scaleY(0.1)
-                background: transparent    
+    background: #070606
+    z-index: 11000
+
+.carga
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  height: 40px
+  display: flex
+  align-items: center
+
+.linea
+    width: 6px
+    height: 40px
+    background: white
+    margin: 0 3px
+    border-radius: 10px
+    animation: carga 0.8s infinite
+
+.linea:nth-child(odd)
+    background: #E80000
+.linea:nth-child(2)
+    animation-delay: 0.1s
+.linea:nth-child(3)
+    animation-delay: 0.2s
+.linea:nth-child(4)
+    animation-delay: 0.3s
+.linea:nth-child(5)
+    animation-delay: 0.4s
+.linea:nth-child(6)
+    animation-delay: 0.5s
+.linea:nth-child(7)
+    animation-delay: 0.6s
+.linea:nth-child(8)
+    animation-delay: 0.7s
+
+@keyframes carga
+  0%
+    height: 0
+  50%
+    height: 40px
+  100%
+    height: 0
