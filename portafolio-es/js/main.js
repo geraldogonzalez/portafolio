@@ -1,9 +1,9 @@
-/*window.onload = function(){
+window.onload = function(){
     var barraCarga = document.getElementById('barra-carga');
     
     barraCarga.style.visibility = 'hidden';
-    barraCarga.style.opacity = '0';
-}*/
+    barraCarga.style.display = 'none';
+}
 $('document').ready(function(){
     //ANIMACIÓN DE "REVELACIÓN" DE TEXTO.
 
@@ -21,7 +21,7 @@ $('document').ready(function(){
     // Ejecuto el inicio de la animacion.
     profesion.start();
     // Establezco la duración que tendrá la animación antes de revelar el texto.
-    profesion.reveal(7000);
+    profesion.reveal(3000);
 
     var boton = document.getElementById('boton');
         
@@ -32,5 +32,19 @@ $('document').ready(function(){
         if(chr.match(/\-trigger/))
             $('#pow-txt').show().delay(500).fadeOut(0);
         }
+    });
+
+    $('#boton-arriba').click(function(){
+        $('body, html').animate({
+          scrollTop: '0px'
+        }, 300);
+      });
+   
+    $(window).scroll(function(){
+      if( $(this).scrollTop() > 0 ){
+        $('#boton-arriba').slideDown(300);
+      } else {
+        $('#boton-arriba').slideUp(300);
+      }
     });
 });

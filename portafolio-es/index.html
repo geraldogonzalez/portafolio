@@ -10,8 +10,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-        content="Portafolio online de un desarrollador web. Desarrollador front-end Geraldo González, creador de sitios webs atractivos, dinamicos e intuitivos.">
+    <meta name="description" content="Portafolio online de un desarrollador web. Desarrollador front-end Geraldo González, creador de sitios webs atractivos, dinamicos e intuitivos.">
     <meta name="keywords" content="desarrollador web, diseñador, desarrollador front-end">
     <meta name="author" content="Geraldo González">
 
@@ -20,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
 </head>
@@ -29,7 +28,8 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-       <!-- <section class="barra-carga" id="barra-carga">
+
+    <!-- <section class="barra-carga" id="barra-carga">
             <div class="carga">
                 <div class="linea"></div>
                 <div class="linea"></div>
@@ -41,39 +41,32 @@
                 <div class="linea"></div>
             </div>
         </section> -->
-        
-    <div class="barra" id="barra">
-        <div class="contenedor contenedor-barra">
-            <div class="foto-nombre">
-                <img src="img/foto.jpg" alt="Mi foto" class="foto">
-                <span class="nombre">Geraldo González</span>
-            </div>
-            <!-- <div class="idiomas">
-                <div class="esp idioma">
-                    <span>Esp:</span><img src="img/español.png" class="bandera active" alt="Español" title="Español">
-                </div>
-                <div class="eng idioma">
-                    <span>Eng:</span><a href="#"><img src="img/english.png" class="bandera" alt="English"
-                            title="Inglés"></a>
-                </div>
-            </div> -->
-        </div>
-    </div>
     <nav class="menu">
+        <div class="foto">
+            <img src="img/foto.jpg" alt="Geraldo González" class="foto">
+        </div>
+
         <div class="contenedor contenedor-menu">
-            <a href="#barra">Inicio</a>
             <a href="#sobre-mi">Sobre mí</a>
             <a href="#proyectos">Proyectos</a>
+            <a href="#conocimientos">Habilidades</a>
             <a href="#contacto">Contacto</a>
+        </div>
+        <div class="idiomas">
+            <div class="esp idioma">
+                <img src="img/español.png" class="bandera active" alt="Español" title="Español">
+            </div>
+            <div class="eng idioma">
+                <a href="#"><img src="img/english.png" class="bandera" alt="English" title="Inglés"></a>
+            </div>
         </div>
     </nav>
     <header class="header">
         <div class="contenedor contenedor-header">
+            <div class="nombre">
+                <span class="fade-in">Geraldo González</span>
+            </div>
             <h2 class="profesion">Desarrollador Web Front-end</h2>
-            <!-- <blockquote class="cita">
-                    “La educación es el arma más poderosa que puedes usar para cambiar el mundo.” <br>
-                    <span>- Nelson Mandela</span>
-                </blockquote> -->
         </div>
     </header>
 
@@ -101,13 +94,12 @@
                             <br><br>
 
                             Me gusta el fútbol (de hecho, te cuento un secreto: los colores de mi portafolio son los
-                            colores
-                            de mi equipo favorito, el A.C. Milan). Aparte de eso, también me gusta la actuación; y soy
-                            un apasionado de la música.
+                            colores de mi equipo favorito, el A.C. Milan). Aparte de eso, también me gusta la actuación
+                            y la música.
                             <del></del></span><del id="pow-trigger"></del>
                     </p>
                 </div>
-               <!--  <div class="boton">
+                <!--  <div class="boton">
                    <a class="boton" id="boton">Iniciar consola</a> 
                 </div> -->
             </div>
@@ -118,10 +110,11 @@
             <div class="contenedor contenedor-proyectos">
                 <div class="proyecto">
                     <div class="foto">
-                        <a href="https://geraldogonzalez.github.io/practicas/airbnb-clon/index.html" target="_blank"><img src="img/proyectos/airnbnb.jpg" alt=""></a>
+                        <a href="https://geraldogonzalez.github.io/practicas/airbnb-clon/index.html" target="_blank"><img
+                                src="img/proyectos/airnbnb.jpg" alt=""></a>
                     </div>
                     <div class="info">
-                        <h4>ViajaYa</h4>
+                        <h4>MiViaje.com</h4>
                         <h5>Tecnologías utilizadas:</h5>
                         <p><span class="html">HTML5</span> - <span class="css">CSS3</span> - <span class="javascript">JavaScript</span></p>
                     </div>
@@ -129,7 +122,8 @@
 
                 <div class="proyecto">
                     <div class="foto">
-                        <a href="https://geraldogonzalez.github.io/practicas/cafe/index.html" target="_blank"><img src="img/proyectos/cafe.jpg" alt=""></a>
+                        <a href="https://geraldogonzalez.github.io/practicas/cafe/index.html" target="_blank"><img src="img/proyectos/cafe.jpg"
+                                alt=""></a>
                     </div>
                     <div class="info">
                         <h4>Cafe Milanello</h4>
@@ -140,32 +134,36 @@
 
                 <div class="proyecto">
                     <div class="foto">
-                        <a href="https://geraldogonzalez.github.io/practicas/blog/index.html" target="_blank"><img src="img/proyectos/blog.jpg" alt=""></a>
+                        <a href="https://geraldogonzalez.github.io/practicas/blog/index.html" target="_blank"><img src="img/proyectos/blog.jpg"
+                                alt=""></a>
                     </div>
                     <div class="info">
                         <h4>Blog</h4>
                         <h5>Tecnologías utilizadas:</h5>
-                        <p><span class="html">HTML5</span> - <span class="css">CSS3</span> - <span class="javascript">JavaScript</span> - <span class="sass">Sass</span></p>
+                        <p><span class="html">HTML5</span> - <span class="css">CSS3</span> - <span class="javascript">JavaScript</span>
+                            - <span class="sass">Sass</span></p>
                     </div>
                 </div>
 
                 <div class="proyecto">
                     <div class="foto">
-                        <a href="https://geraldogonzalez.github.io/practicas/galeria/index.html" target="_blank"><img src="img/proyectos/galería.jpg" alt=""></a>
+                        <a href="https://geraldogonzalez.github.io/practicas/galeria/index.html" target="_blank"><img
+                                src="img/proyectos/galería.jpg" alt=""></a>
                     </div>
                     <div class="info">
                         <h4>Virtual Shop</h4>
                         <div class="tech">
                             <h5>Tecnologías utilizadas:</h5>
-                            <p><span class="html">HTML5</span> - <span class="css">CSS3</span> - <span class="javascript">JavaScript</span> - <span class="javascript">Bootstrap</span></p>
+                            <p><span class="html">HTML5</span> - <span class="css">CSS3</span> - <span class="javascript">JavaScript</span>
+                                - <span class="bootstrap">Bootstrap</span></p>
                         </div>
                     </div>
                 </div>
         </section>
 
         <div class="conocimientos">
-            <h2 class="titulo">Habilidades tecnológicas</h2>
-            <div class="contenedor">                
+            <h2 class="titulo" id="conocimientos">Habilidades tecnológicas</h2>
+            <div class="contenedor">
                 <div class="contenedor-conocimientos">
                     <div class="tarjeta">
                         <input type="checkbox" name="">
@@ -314,31 +312,43 @@
         <section class="certificados">
             <h2 class="titulo" id="certificados">Certificados obtenidos</h2>
             <div class="contenedor contenedor-certificados">
-                <a href="img/certificados/html.jpg" data-lightbox="certificado" data-title="Certificado HTML - SoloLearn"><img src="img/certificados/html.jpg" alt=""></a>
-        
-                <a href="img/certificados/css.jpg" data-lightbox="certificado" data-title="Certificado CSS - SoloLearn"><img src="img/certificados/css.jpg" alt=""></a>
-        
-                <a href="img/certificados/javscript.jpg" data-lightbox="certificado" data-title="Certificado JavaScript - SoloLearn"><img src="img/certificados/javscript.jpg" alt=""></a>
-        
-                <a href="img/certificados/programacion.png" data-lightbox="certificado" data-title="Certificado programación básica - Platzi"><img src="img/certificados/programacion.png" alt=""></a>
-        
-                <a href="img/certificados/desarrollo1.jpg" data-lightbox="certificado" data-title="Certificado desarrollo web 1 - Google e IEI"><img src="img/certificados/desarrollo1.jpg" alt=""></a>
-        
-                <a href="img/certificados/desarrollo2.jpg" data-lightbox="certificado" data-title="Certificado desarrollo web 2 - Google e IEI"><img src="img/certificados/desarrollo2.jpg" alt=""></a>
+                <a href="img/certificados/html.jpg" data-lightbox="certificado" data-title="Certificado HTML - SoloLearn"><img
+                        src="img/certificados/html.jpg" alt=""></a>
+
+                <a href="img/certificados/css.jpg" data-lightbox="certificado" data-title="Certificado CSS - SoloLearn"><img
+                        src="img/certificados/css.jpg" alt=""></a>
+
+                <a href="img/certificados/javscript.jpg" data-lightbox="certificado" data-title="Certificado JavaScript - SoloLearn"><img
+                        src="img/certificados/javscript.jpg" alt=""></a>
+
+                <a href="img/certificados/programacion.png" data-lightbox="certificado" data-title="Certificado programación básica - Platzi"><img
+                        src="img/certificados/programacion.png" alt=""></a>
+
+                <a href="img/certificados/desarrollo1.jpg" data-lightbox="certificado" data-title="Certificado desarrollo web 1 - Google e IEI"><img
+                        src="img/certificados/desarrollo1.jpg" alt=""></a>
+
+                <a href="img/certificados/desarrollo2.jpg" data-lightbox="certificado" data-title="Certificado desarrollo web 2 - Google e IEI"><img
+                        src="img/certificados/desarrollo2.jpg" alt=""></a>
         </section>
     </main>
 
     <footer class="footer">
         <div class="contenedor">
             <div class="redes-sociales" id="contacto">
-                <a href="https://www.linkedin.com/in/geraldo-gonzález-326898178" target="_blank" class="social linkedin" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/geraldogonzalez_/" target="_blank" class="social instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com/geraldgonzalez_" target="_blank" class="social twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.youtube.com/channel/UCxPGZROtAFFqwWXJcxGqVlQ?view_as=subscriber" target="_blank" class="social youtube" title="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://github.com/geraldogonzalez/" target="_blank" class="social github" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/geraldo-gonzález-326898178" target="_blank" class="social linkedin"
+                    title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/geraldogonzalez_/" target="_blank" class="social instagram" title="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/geraldgonzalez_" target="_blank" class="social twitter" title="Twitter"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCxPGZROtAFFqwWXJcxGqVlQ?view_as=subscriber" target="_blank"
+                    class="social youtube" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/geraldogonzalez/" target="_blank" class="social github" title="GitHub"><i
+                        class="fab fa-github"></i></a>
             </div>
         </div>
         <p class="autor">Geraldo González - 2019</p>
+        <span><i class="boton-arriba fa fa-chevron-up" id="boton-arriba" aria-hidden="true"></i></span>
     </footer>
 
     <script src="" async defer></script>
