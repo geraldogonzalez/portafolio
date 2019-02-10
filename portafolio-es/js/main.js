@@ -21,7 +21,7 @@ $('document').ready(function(){
     // Ejecuto el inicio de la animacion.
     profesion.start();
     // Establezco la duración que tendrá la animación antes de revelar el texto.
-    profesion.reveal(3000);
+    profesion.reveal(7000);
 
     var boton = document.getElementById('boton');
         
