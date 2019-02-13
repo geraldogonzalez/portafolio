@@ -62,7 +62,6 @@ h1, h2, h3, h4, h5, h6, p {
   position: fixed;
   bottom: 1.25rem;
   right: 1.25rem;
-  z-index: 1;
 }
 
 /** Media Queries **/
@@ -117,11 +116,11 @@ h1, h2, h3, h4, h5, h6, p {
   grid-template-columns: 10% auto;
 }
 .menu .foto {
-  width: 100%;
+  margin: 0 auto;
+  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
-  text-align: center;
 }
 .menu .foto img {
   width: 2.5rem;
@@ -390,7 +389,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 300;
   color: #ffffff;
   line-height: 1.5rem;
-  letter-spacing: 1.9px;
+  letter-spacing: 1.6px;
 }
 .main .conocimientos .contenedor .contenedor-conocimientos .tarjeta .detalles h3 {
   margin-bottom: 0.3125rem;
